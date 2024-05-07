@@ -20,9 +20,7 @@ public class CriusDatabase
     public async Task SavePassword(PasswordItem passwordItem)
     {
         await Init();
-        Console.WriteLine("a");
         passwordItem.Id = await GeneratePrimaryKey();
-        Console.WriteLine("b");
         await Database.InsertOrReplaceAsync(passwordItem);
     }
     async Task Init()
