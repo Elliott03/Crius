@@ -66,6 +66,10 @@ public partial class PasswordPage: ContentPage, INotifyPropertyChanged
     }
     private async void OnPasswordSelected(object sender, SelectedItemChangedEventArgs e)
     {
+        if (!Constants.IsAuthenticated) 
+        {
+            return;
+        }
         if (e.SelectedItem == null)
             return; 
         var selectedItem = (PasswordItem)e.SelectedItem;
