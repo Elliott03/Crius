@@ -15,8 +15,9 @@ Crius is an offline password manager application built using .NET MAUI framework
 To get started with Crius, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Build the solution using Visual Studio or the .NET CLI.
-3. Run the application on your preferred platform (Windows, macOS, iOS, Android).
+2. Edit the CriusDatabase.SaveAuthenticationPassword() function to save your desired password and call it.
+3. Build the solution using Visual Studio or the .NET CLI.
+4. Run the application on your preferred platform (Windows, macOS, iOS, Android).
 
 ## Usage
 
@@ -36,6 +37,3 @@ Upon launching Crius, you will be prompted to authenticate using your password. 
 
 Contributions to Crius are welcome! If you encounter any bugs or have suggestions for improvements, please open an issue or submit a pull request on GitHub.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
